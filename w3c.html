@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  if (window.navigator.geolocation) {
+    var options = {
+      enableHighAccuracy: false,
+      maximumAge: 0,
+      timeout: 0
+    };
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+      console.log(position);
+    }, function(error) {
+      console.log(error);
+    }, options);
+  } else {
+  // the browser does not natively support geolocation
+  }
+</script>
